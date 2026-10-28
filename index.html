@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Hourwise</title>
+  <meta name="description" content="See every price in hours of your work. Budget, skip impulse buys, and save toward goals.">
+  <meta name="theme-color" content="#fff8e7">
+  <meta name="color-scheme" content="light dark">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Hourwise">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header id="app-header" class="app-header">
+    <a class="brand" href="#home" aria-label="Hourwise home">
+      <svg width="28" height="28" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="9" fill="#ffc93c"/><path d="M10 7h12M10 25h12M11 7c0 5 4 6 4 9s-4 4-4 9M21 7c0 5-4 6-4 9s4 4 4 9" stroke="#2a2233" stroke-width="2.2" fill="none" stroke-linecap="round"/><path d="M12.6 24h6.8L16 20.2Z M13.4 10.5h5.2L16 13.6Z" fill="#2a2233"/></svg>
+      <span>Hourwise</span>
+    </a>
+    <div class="header-right">
+      <a href="#pig" class="points-pill" id="header-points" aria-label="Points">🪙 0</a>
+      <a href="#settings" class="icon-btn" id="settings-link" aria-label="Settings"></a>
+    </div>
+  </header>
+
+  <main id="main" class="main" tabindex="-1">
+    <noscript><p class="card">Hourwise needs JavaScript to run.</p></noscript>
+  </main>
+
+  <nav id="tabbar" class="tabbar tabbar-wrap" aria-label="Main"></nav>
+
+  <dialog id="sheet" class="sheet" aria-label="Details"><div id="sheet-body"></div></dialog>
+  <dialog id="confirm" class="confirm"></dialog>
+  <div id="onboarding" class="onboarding" hidden></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+</body>
+</html>
